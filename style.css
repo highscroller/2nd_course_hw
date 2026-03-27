@@ -150,6 +150,15 @@ h3 {
   transition: all 0.3s ease;
 }
 
+.main {
+  position: relative;
+}
+.main__big-star {
+  position: absolute;
+  top: 120px;
+  left: 933px;
+}
+
 .ticker {
   position: relative;
   z-index: 1;
@@ -174,6 +183,7 @@ h3 {
 }
 
 .info {
+  position: relative;
   display: flex;
   padding-top: 94px;
   padding-bottom: 144px;
@@ -181,16 +191,14 @@ h3 {
   gap: 24px;
   flex-direction: column;
 }
-
 .info__title {
   color: #FFFFFF;
 }
-
 .info__text {
   color: #FFFFFF;
 }
-
 .info__games {
+  z-index: 1;
   -moz-column-count: 3;
        column-count: 3;
   -moz-column-gap: 0;
@@ -198,6 +206,22 @@ h3 {
   gap: 32px;
   align-items: start;
   margin-top: 48px;
+}
+.info__smaller-star {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  top: 770px;
+  left: 25px;
+  transform: rotate(5.45deg);
+}
+.info__small-star {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: 822px;
+  left: 40px;
+  transform: rotate(5.45deg);
 }
 
 .info__game-card {
