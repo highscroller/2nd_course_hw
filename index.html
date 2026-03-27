@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header l-center">
+        <div class="heading">
+
+            <img src="img/header_big-star-desktop.png" alt="big_star" class="heading__big-star-desktop">
+            <img src="img/header_big-star-mobile.png" alt="big_star" class="heading__big-star-mobile">
+            
+            <h1>Добро пожаловать<br>на мой сайт мини-игр</h1>
+            <p class="text-regular">Тебе предстоит пройти несколько увлекательных игр. 
+                Если готов, нажимай <span class="text-bold">«Поехали!»</span> и <span class="text-bold">приступай.</span></p>
+            <a href="#about-games">
+                <button class="header-button">Поехали!</button>
+            </a>
+
+            <img src="img/header_green-filled-star.png" alt="green_filled_star" class="heading__top-full-star">
+            <img src="img/header_empty-black-border-star.png" alt="empty_black_border_star" class="heading__top-empty-star">
+
+            <img src="img/header_empty-black-border-star.png" alt="empty_black_border_star" class="heading__bottom-empty-star">
+            <img src="img/header_green-filled-star.png" alt="green_filled_star" class="heading__bottom-full-star">
+        </div>
+    </header>
+
+    <main>
+        <div class="ticker">
+            <p class="ticker-text">Викторина</p>
+            <img src="img/ticker_star.png" alt="ticker_star">
+            <p class="ticker-text">Угадай число</p>
+            <img src="img/ticker_star.png" alt="ticker_star">
+            <p class="ticker-text">Переверни текст</p>
+            <img src="img/ticker_star.png" alt="ticker_star">
+            <p class="ticker-text">Простая арифметика</p>
+            <img src="img/ticker_star.png" alt="ticker_star">
+            <p class="ticker-text">Камень, ножницы, бумага</p>
+            <img src="img/ticker_star.png" alt="ticker_star">
+            <p class="ticker-text">Генератор сулчайных цветов</p>
+        </div>
+
+        <div class="info l-center" id="about-games">
+            <h1 class="info__title">Об играх</h1>
+            <p class="info__text text-regular">В моей коллекции представлено 6 игр на разные темы.<br>
+                Игры несложные — в них может поиграть каждый.<br>
+                Все игры доступны для пользования.</p>
+
+            <div class="info__games">
+                <a href="index.html">
+                    <article class="info__game-card info__game-card--1">
+                        <div class="info__game-card-media">
+                            <img src="img/game-1.png" alt="" class="info__game-card-img" style="background-color: #AD61FF;">
+                        </div>
+                        <div class="info__game-card-body">
+                            <span class="info__game-card-tag">Игра № 1</span>
+                            <h2 class="info__game-card-title">Угадай число</h2>
+                        </div>
+                    </article>
+                </a>
+                <a href="index.html">
+                    <article class="info__game-card info__game-card--4">
+                        <div class="info__game-card-media">
+                            <img src="img/game-4.png" alt="" class="info__game-card-img" style="background-color: #271A58;">
+                        </div>
+                        <div class="info__game-card-body">
+                            <span class="info__game-card-tag">Игра № 4</span>
+                            <h2 class="info__game-card-title">Камень, ножницы, бумага</h2>
+                        </div>
+                    </article>
+                </a>
+                <a href="index.html">  
+                    <article class="info__game-card info__game-card--2">
+                        <div class="info__game-card-media">
+                            <img src="img/game-2.png" alt="" class="info__game-card-img" style="background-color: #FDAD00;">
+                        </div>
+                        <div class="info__game-card-body">
+                            <span class="info__game-card-tag">Игра № 2</span>
+                            <h2 class="info__game-card-title">Простая арифметика</h2>
+                        </div>
+                    </article>
+                </a>
+                <a href="index.html">
+                    <article class="info__game-card info__game-card--5">
+                        <div class="info__game-card-media">
+                            <img src="img/game-5.png" alt="" class="info__game-card-img" style="background-color: #99D100;">
+                        </div>
+                        <div class="info__game-card-body">
+                            <span class="info__game-card-tag">Игра № 5</span>
+                            <h2 class="info__game-card-title">Простая викторина</h2>
+                        </div>
+                    </article>
+                </a>
+                <a href="index.html">
+                    <article class="info__game-card info__game-card--3">
+                        <div class="info__game-card-media">
+                            <img src="img/game-3.png" alt="" class="info__game-card-img" style="background-color: #565EEF;">
+                        </div>
+                        <div class="info__game-card-body">
+                            <span class="info__game-card-tag">Игра № 3</span>
+                            <h2 class="info__game-card-title">Переверни текст</h2>
+                        </div>
+                    </article>
+                </a>
+                <a href="index.html">
+                    <article class="info__game-card info__game-card--6">
+                        <div class="info__game-card-media">
+                            <img src="img/game-6.png" alt="" class="info__game-card-img" style="background-color: #271A58;">
+                        </div>
+                        <div class="info__game-card-body">
+                            <span class="info__game-card-tag">Игра № 6</span>
+                            <h2 class="info__game-card-title">Генератор случайных цветов</h2>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer l-center">
+        <p class="footer-text">Все права защищены.</p>
+    </footer>
 </body>
 </html>
