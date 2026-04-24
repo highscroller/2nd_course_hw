@@ -1,0 +1,249 @@
+@media (max-width: 376px) {
+    .heading {
+        width: 343px;
+        align-items: center;
+        padding: 147px 17px 182px 17px;
+
+        &__big-star-desktop {
+            display: none;
+        }
+    
+        &__big-star-mobile {
+            display: block;
+            position: absolute;
+            top: -88px;
+            left: 216px;
+        }
+    
+        &__top-full-star {
+            width: 35px;
+            height: 35px;
+            top: 97px;
+            left: 37px;
+        }
+        
+        &__top-empty-star {
+            width: 21px;
+            height: 21px;
+            top: 64px;
+            left: 91px;
+        }
+        
+        &__bottom-empty-star {
+            width: 49px;
+            height: 49px;
+        }
+    
+        &__bottom-empty-star {
+            width: 40px;
+            height: 40px;
+            top: 580px;
+            left: 303px;
+        }
+    
+        &__bottom-full-star {
+            width: 18px;
+            height: 18px;
+            top: 557px;
+            left: 272px;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0 23.5px 0 23.5px;
+    }    
+
+    .text-regular {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0 23.5px 0 23.5px;
+    }
+
+    .text-bold {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .header-button {
+        width: 285px;
+        height: 55px;
+        font-size: 16px;
+        padding: 0 23.5px 0 23.5px;
+    }
+
+    .ticker {
+        width: 1717px;
+        height: 51px;
+        padding: 0 16px 0 16px;
+        gap: 27px;
+
+        &__text {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 16px;
+            line-height: 110.00000000000001%;
+            letter-spacing: 4%;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+    
+        &__star {
+            width: 19px;
+            height: 19px;
+        }
+    }
+
+    .info {
+        padding: 48px 0 10px 0;
+        gap: 0px;
+
+        &__big-star {
+            display: none;
+        }
+
+        &__smaller-star {
+            display: none;
+        }
+
+        &__small-star {
+            display: none;
+        }
+
+        &__title-desktop {
+            display: none;
+        }
+
+        &__title-mobile {
+            display: block;
+            color: $color-white;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &__text {
+            display: none;
+        }
+
+        &__games {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            padding: 0 16px;
+        }
+
+        &__game-card-media {
+            display: block;
+            width: 285px;
+            height: 343px;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+
+        &__game-card-tag {
+            display: none;
+        }
+
+        &__game-card-description {
+            display: block;
+            font-family: Montserrat;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+        }
+        
+        &__game-card-button {
+            display: block;
+            width: 285px;
+            height: 55px;
+            gap: 10px;
+            opacity: 1;
+            border-radius: 60px;
+            border-width: 1px;
+            padding-top: 16px;
+            padding-right: 28px;
+            padding-bottom: 16px;
+            padding-left: 28px;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $color-white;
+            background-color: $color-black; 
+        }
+
+        &__game-card-button:hover {
+            background-color: $color-white;
+            color: $color-black;
+            transition: all 0.3s ease;
+        }
+
+        &__game-card-media {
+            width: 100%;
+            height: 528px;
+        }
+
+        &__game-card {
+            &--1 {
+                height: 528px;
+            }
+
+            &--2 {
+                height: 567px;
+            }
+
+            &--3 {
+                height: 567px;
+            }
+
+            &--4 {
+                height: 606px;
+                margin-top: 0px;
+            }
+
+            &--5 {
+                height: 567px;
+            }
+            
+            &--6 {
+                height: 626px;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .footer-text {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
