@@ -1,6 +1,6 @@
-@media (max-width: 376px) {
+@media (max-width: 769px) {
     .heading {
-        width: 343px;
+        width: 769px;
         align-items: center;
         padding: 147px 17px 182px 17px;
 
@@ -12,7 +12,7 @@
             display: block;
             position: absolute;
             top: -88px;
-            left: 216px;
+            left: 555px;
         }
     
         &__top-full-star {
@@ -37,15 +37,15 @@
         &__bottom-empty-star {
             width: 40px;
             height: 40px;
-            top: 580px;
-            left: 303px;
+            top: 444px;
+            left: 655px;
         }
     
         &__bottom-full-star {
             width: 18px;
             height: 18px;
-            top: 557px;
-            left: 272px;
+            top: 500px;
+            left: 700px;
         }
     }
 
@@ -146,7 +146,7 @@
 
         &__games {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 2fr 2fr;
             gap: 24px;
             padding: 0 16px;
         }
@@ -218,7 +218,7 @@
 
             &--3 {
                 height: 567px;
-                margin-top: 0px;
+                margin-top: -37px;
             }
 
             &--4 {
@@ -228,7 +228,7 @@
 
             &--5 {
                 height: 567px;
-                margin-top: 0px;
+                margin-top: -74px;
             }
             
             &--6 {
