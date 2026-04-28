@@ -47,3 +47,16 @@ num /= 3;
 num += 1;
 num -= 1;
 alert(num);
+
+alert("Задание 8");
+let age;
+age = prompt("Сколько вам лет?");
+alert("Ваш возраст: " + age);
+
+alert("Задание 9");
+const user = {name: "Grisha", age: 22, isAdmin: true};
+alert("Имя: " + user.name + ", возраст: " + user.age + ", является админом: " + user.isAdmin);
+
+alert("Задание 10");
+let imya = prompt("Как вас зовут?");
+alert("Саламалейкум, " + imya + "!");
