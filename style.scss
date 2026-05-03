@@ -174,11 +174,12 @@ h3 {
     z-index: 1;
     padding-top: 27px;
     padding-bottom: 27px;
-    width: 3220px;
     display: flex;
     align-items: center;
     gap: 51px;
     background-color: $color-green;
+    width: 100%;
+    overflow: hidden;
 
     &__text {
         font-family: Montserrat;
@@ -189,6 +190,7 @@ h3 {
         letter-spacing: 4%;
         vertical-align: middle;
         text-transform: uppercase;
+        white-space: nowrap;
     }
 }
 
