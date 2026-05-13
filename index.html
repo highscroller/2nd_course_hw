@@ -33,21 +33,22 @@
 
     <main class="main">
         <div class="ticker">
-            <p class="ticker-text">Викторина</p>
-            <img src="img/ticker_star.png" alt="ticker_star">
-            <p class="ticker-text">Угадай число</p>
-            <img src="img/ticker_star.png" alt="ticker_star">
-            <p class="ticker-text">Переверни текст</p>
-            <img src="img/ticker_star.png" alt="ticker_star">
-            <p class="ticker-text">Простая арифметика</p>
-            <img src="img/ticker_star.png" alt="ticker_star">
-            <p class="ticker-text">Камень, ножницы, бумага</p>
-            <img src="img/ticker_star.png" alt="ticker_star">
-            <p class="ticker-text">Генератор сулчайных цветов</p>
+            <p class="ticker__text">Викторина</p>
+            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
+            <p class="ticker__text">Угадай число</p>
+            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
+            <p class="ticker__text">Переверни текст</p>
+            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
+            <p class="ticker__text">Простая арифметика</p>
+            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
+            <p class="ticker__text">Камень, ножницы, бумага</p>
+            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
+            <p class="ticker__text">Генератор сулчайных цветов</p>
         </div>
 
         <div class="info l-center" id="about-games">
-            <h1 class="info__title">Об играх</h1>
+            <h1 class="info__title-desktop">Об играх</h1>
+            <h1 class="info__title-mobile">Мини-игры</h1>
             <p class="info__text text-regular">В моей коллекции представлено 6 игр на разные темы.<br>
                 Игры несложные — в них может поиграть каждый.<br>
                 Все игры доступны для пользования.</p>
@@ -65,17 +66,8 @@
                         <div class="info__game-card-body">
                             <span class="info__game-card-tag">Игра № 1</span>
                             <h2 class="info__game-card-title">Угадай число</h2>
-                        </div>
-                    </article>
-                </a>
-                <a href="index.html">
-                    <article class="info__game-card info__game-card--4">
-                        <div class="info__game-card-media">
-                            <img src="img/game-4.png" alt="" class="info__game-card-img" style="background-color: #271A58;">
-                        </div>
-                        <div class="info__game-card-body">
-                            <span class="info__game-card-tag">Игра № 4</span>
-                            <h2 class="info__game-card-title">Камень, ножницы, бумага</h2>
+                            <p class="info__game-card-description">Попробуй угадать случайное число от 1 до 100.</p>
+                            <button class="info__game-card-button">Играть!</button>
                         </div>
                     </article>
                 </a>
@@ -87,17 +79,8 @@
                         <div class="info__game-card-body">
                             <span class="info__game-card-tag">Игра № 2</span>
                             <h2 class="info__game-card-title">Простая арифметика</h2>
-                        </div>
-                    </article>
-                </a>
-                <a href="index.html">
-                    <article class="info__game-card info__game-card--5">
-                        <div class="info__game-card-media">
-                            <img src="img/game-5.png" alt="" class="info__game-card-img" style="background-color: #99D100;">
-                        </div>
-                        <div class="info__game-card-body">
-                            <span class="info__game-card-tag">Игра № 5</span>
-                            <h2 class="info__game-card-title">Простая викторина</h2>
+                            <p class="info__game-card-description">Попробуй решить простые арифметические задачи.</p>
+                            <button class="info__game-card-button">Играть!</button>
                         </div>
                     </article>
                 </a>
@@ -109,6 +92,34 @@
                         <div class="info__game-card-body">
                             <span class="info__game-card-tag">Игра № 3</span>
                             <h2 class="info__game-card-title">Переверни текст</h2>
+                            <p class="info__game-card-description">Попробуй ввести текст, который будет перевернут.</p>
+                            <button class="info__game-card-button">Играть!</button>
+                        </div>
+                    </article>
+                </a>
+                <a href="index.html">
+                    <article class="info__game-card info__game-card--4">
+                        <div class="info__game-card-media">
+                            <img src="img/game-4.png" alt="" class="info__game-card-img" style="background-color: #271A58;">
+                        </div>
+                        <div class="info__game-card-body">
+                            <span class="info__game-card-tag">Игра № 4</span>
+                            <h2 class="info__game-card-title">Камень,<br>ножницы,<br>бумага</h2>
+                            <p class="info__game-card-description">Сыграй в популярную игру против компьютера.</p>
+                            <button class="info__game-card-button">Играть!</button>
+                        </div>
+                    </article>
+                </a>
+                <a href="index.html">
+                    <article class="info__game-card info__game-card--5">
+                        <div class="info__game-card-media">
+                            <img src="img/game-5.png" alt="" class="info__game-card-img" style="background-color: #99D100;">
+                        </div>
+                        <div class="info__game-card-body">
+                            <span class="info__game-card-tag">Игра № 5</span>
+                            <h2 class="info__game-card-title">Простая викторина</h2>
+                            <p class="info__game-card-description">Отвечай на вопросы викторины с вариантами ответов.</p>
+                            <button class="info__game-card-button">Играть!</button>
                         </div>
                     </article>
                 </a>
@@ -120,6 +131,8 @@
                         <div class="info__game-card-body">
                             <span class="info__game-card-tag">Игра № 6</span>
                             <h2 class="info__game-card-title">Генератор случайных цветов</h2>
+                            <p class="info__game-card-description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                            <button class="info__game-card-button">Играть!</button>
                         </div>
                     </article>
                 </a>
@@ -131,5 +144,7 @@
     <footer class="footer l-center">
         <p class="footer-text">Все права защищены.</p>
     </footer>
+
+    <!-- <script src="hw2.js"></script> -->
 </body>
 </html>
