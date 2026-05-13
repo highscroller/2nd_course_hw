@@ -386,17 +386,12 @@ h3 {
         gap: 32px;
         z-index: 10;
 
-        a {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        > a:nth-child(odd) .mini-games__game-card {
+        // DOM: media → body; odd cards: текст слева, картинка справа
+        > .mini-games__game-card:nth-child(odd) {
             flex-direction: row-reverse;
         }
 
-        > a:nth-child(even) .mini-games__game-card {
+        > .mini-games__game-card:nth-child(even) {
             flex-direction: row;
         }
     }
@@ -442,9 +437,9 @@ h3 {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 0;
     padding: 40px 48px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .mini-games__game-card-tag {
@@ -452,7 +447,7 @@ h3 {
 }
 
 .mini-games__game-card-title {
-    margin: 0;
+    margin: 0 0 24px 0;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -461,7 +456,7 @@ h3 {
 }
 
 .mini-games__game-card-description {
-    margin: 0;
+    margin: 0 0 32px 0;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -470,7 +465,7 @@ h3 {
 }
 
 .mini-games__game-card-button {
-    margin-top: auto;
+    margin-top: 0;
     align-self: flex-start;
     padding: 16px 28px;
     min-width: 247px;

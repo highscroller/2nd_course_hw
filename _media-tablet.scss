@@ -4,6 +4,10 @@
         padding: 0;
     }
 
+    .header {
+        overflow-x: hidden;
+    }
+
     .heading {
         width: 86vh;
         align-items: center;
@@ -18,6 +22,7 @@
             position: absolute;
             top: -94px;
             left: 525px;
+            overflow: hidden;
         }
     
         &__top-full-star {
@@ -60,6 +65,14 @@
         padding: 0 23.5px 0 23.5px;
     }    
 
+    .main__big-star {
+        display: none;
+    }
+
+    .main {
+        overflow-x: hidden;
+    }
+
     .text-regular {
         font-family: Montserrat;
         font-weight: 400;
@@ -87,14 +100,15 @@
         width: 285px;
         height: 55px;
         font-size: 16px;
-        padding: 0 23.5px 0 23.5px;
+        padding: 0 0 0 23.5px;
     }
 
     .ticker {
-        width: 1717px;
+        width: 100%;
         height: 51px;
-        padding: 0 16px 0 16px;
+        padding: 0 0 0 16px;
         gap: 27px;
+        overflow: hidden;
 
         &__text {
             font-family: Montserrat;
