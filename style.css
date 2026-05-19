@@ -79,11 +79,19 @@ h3 {
   position: relative;
   width: 769px;
   padding: 196px 551px 156px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
+
 .heading__top-full-star {
   position: absolute;
   top: 102px;
@@ -91,6 +99,7 @@ h3 {
   width: 57px;
   height: 57px;
 }
+
 .heading__top-empty-star {
   position: absolute;
   width: 35px;
@@ -98,6 +107,7 @@ h3 {
   top: 69px;
   left: 36px;
 }
+
 .heading__bottom-full-star {
   position: absolute;
   width: 37px;
@@ -105,6 +115,7 @@ h3 {
   top: 499px;
   left: 828px;
 }
+
 .heading__bottom-empty-star {
   position: absolute;
   width: 83px;
@@ -112,11 +123,13 @@ h3 {
   top: 520px;
   left: 893px;
 }
+
 .heading__big-star-desktop {
   position: absolute;
   top: -400px;
   left: 720px;
 }
+
 .heading__big-star-mobile {
   display: none;
 }
@@ -147,12 +160,14 @@ h3 {
 .header-button:hover {
   background-color: #FFFFFF;
   color: #202027;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .main {
   position: relative;
 }
+
 .main__big-star {
   position: absolute;
   top: 120px;
@@ -165,19 +180,24 @@ h3 {
   z-index: 1;
   padding-top: 27px;
   padding-bottom: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 51px;
   background-color: #BCEC30;
   width: 100%;
   overflow: hidden;
 }
+
 .ticker__text {
   font-family: Montserrat;
   font-weight: 700;
   font-style: Bold;
   font-size: 30px;
-  line-height: 110%;
+  line-height: 110.00000000000001%;
   letter-spacing: 4%;
   vertical-align: middle;
   text-transform: uppercase;
@@ -186,82 +206,115 @@ h3 {
 
 .info {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 94px;
   padding-bottom: 144px;
   background-color: #202027;
   gap: 24px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   z-index: 1;
 }
+
 .info__title-desktop {
   color: #FFFFFF;
 }
+
 .info__title-mobile {
   display: none;
 }
+
 .info__text {
   color: #FFFFFF;
 }
+
 .info__games {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  -ms-grid-columns: (minmax(0, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 48px;
   gap: 32px;
 }
+
 .info__games a {
   text-decoration: none;
   color: inherit;
 }
+
 .info__smaller-star {
   position: absolute;
   width: 31px;
   height: 31px;
   top: 770px;
   left: 25px;
-  transform: rotate(5.45deg);
+  -webkit-transform: rotate(5.45deg);
+          transform: rotate(5.45deg);
 }
+
 .info__small-star {
   position: absolute;
   width: 54px;
   height: 54px;
   top: 822px;
   left: 40px;
-  transform: rotate(5.45deg);
+  -webkit-transform: rotate(5.45deg);
+          transform: rotate(5.45deg);
 }
 
 .info__game-card {
   width: 100%;
   border-radius: 30px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #FFFFFF;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 1;
 }
+
 .info__game-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .info__game-card--1 {
   height: 473px;
 }
+
 .info__game-card--2 {
   height: 512px;
 }
+
 .info__game-card--3 {
   height: 473px;
 }
+
 .info__game-card--4 {
   height: 551px;
   margin-top: -39px;
 }
+
 .info__game-card--5 {
   height: 512px;
 }
+
 .info__game-card--6 {
   height: 551px;
   margin-top: -39px;
@@ -276,20 +329,28 @@ h3 {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 30px;
 }
 
 .info__game-card-body {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
 }
 
 .info__game-card-tag {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding: 8px 16px;
   border-radius: 999px;
   background-color: #f6f6f6;
@@ -319,73 +380,117 @@ h3 {
 
 .mini-games {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 48px;
   padding-bottom: 144px;
   background-color: #202027;
   z-index: 1;
 }
+
 .mini-games__title-desktop {
   margin: 0;
   color: #FFFFFF;
 }
+
 .mini-games .info__smaller-star,
 .mini-games .info__small-star {
   display: none;
 }
+
 .mini-games__smaller-star {
   position: absolute;
   width: 35px;
   height: 35px;
   top: 47px;
   left: 1268px;
-  transform: rotate(5.45deg);
+  -webkit-transform: rotate(5.45deg);
+          transform: rotate(5.45deg);
   z-index: 1;
 }
+
 .mini-games__small-star {
   position: absolute;
   width: 70px;
   height: 70px;
   top: 60px;
   left: 1330px;
-  transform: rotate(5.45deg);
+  -webkit-transform: rotate(5.45deg);
+          transform: rotate(5.45deg);
   z-index: 1;
 }
+
 .mini-games__games {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 32px;
   z-index: 10;
 }
+
 .mini-games__games > .mini-games__game-card:nth-child(odd) {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
+
 .mini-games__games > .mini-games__game-card:nth-child(even) {
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .mini-games__game-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   min-height: 500px;
   border-radius: 30px;
   overflow: hidden;
   background-color: #FFFFFF;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-  align-items: stretch;
+  -webkit-box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
   transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
+
 .mini-games__game-card:hover {
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
 }
 
 .mini-games__game-card-media {
-  flex: 1 1 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   min-width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   overflow: hidden;
   background-color: #c2c2c2;
 }
@@ -395,18 +500,29 @@ h3 {
   width: 100%;
   height: 100%;
   min-height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mini-games__game-card-body {
-  flex: 1 1 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   min-width: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 0;
   padding: 40px 48px;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .mini-games__game-card-tag {
@@ -433,7 +549,8 @@ h3 {
 
 .mini-games__game-card-button {
   margin-top: 0;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding: 16px 28px;
   min-width: 247px;
   min-height: 66px;
@@ -447,8 +564,10 @@ h3 {
   color: #FFFFFF;
   background-color: #202027;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
 .mini-games__game-card-button:hover {
   background-color: #FFFFFF;
   color: #202027;
@@ -481,7 +600,9 @@ h3 {
   }
   .heading {
     width: 86vh;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 147px 17px 182px 17px;
   }
   .heading__big-star-desktop {
@@ -572,7 +693,7 @@ h3 {
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
-    line-height: 110%;
+    line-height: 110.00000000000001%;
     letter-spacing: 4%;
     vertical-align: middle;
     text-transform: uppercase;
@@ -612,8 +733,10 @@ h3 {
     display: none;
   }
   .info__games {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
     gap: 24px;
     padding: 0 16px;
   }
@@ -621,7 +744,8 @@ h3 {
     display: block;
     width: 285px;
     height: 343px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 30px;
   }
   .info__game-card-tag {
@@ -661,6 +785,7 @@ h3 {
   .info__game-card-button:hover {
     background-color: #FFFFFF;
     color: #202027;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   .info__game-card-media {
@@ -703,6 +828,7 @@ h3 {
     vertical-align: middle;
   }
 }
+
 @media (max-width: 376px) {
   * {
     margin: 0;
@@ -713,7 +839,9 @@ h3 {
   }
   .heading {
     width: 343px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 147px 17px 182px 17px;
   }
   .heading__big-star-desktop {
@@ -787,7 +915,8 @@ h3 {
     padding: 0 23.5px 0 23.5px;
   }
   .ticker {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     height: 51px;
     padding: 0 0 0 16px;
@@ -798,7 +927,7 @@ h3 {
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
-    line-height: 110%;
+    line-height: 110.00000000000001%;
     letter-spacing: 4%;
     vertical-align: middle;
     text-transform: uppercase;
@@ -838,8 +967,10 @@ h3 {
     display: none;
   }
   .info__games {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     gap: 24px;
     padding: 0 16px;
   }
@@ -847,7 +978,8 @@ h3 {
     display: block;
     width: 285px;
     height: 343px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 30px;
   }
   .info__game-card-tag {
@@ -887,6 +1019,7 @@ h3 {
   .info__game-card-button:hover {
     background-color: #FFFFFF;
     color: #202027;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   .info__game-card-media {
@@ -932,5 +1065,4 @@ h3 {
     vertical-align: middle;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
