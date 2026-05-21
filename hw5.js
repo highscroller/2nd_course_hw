@@ -1,104 +1,78 @@
 // ЗАДАНИЕ 1
 
-function task1() {
-    console.log('ЗАДАНИЕ 1');
+console.log('ЗАДАНИЕ 1');
 
-    let a = prompt('Введите число a');
-    let b = prompt('Введите число b');
-    if (Number(a) > Number(b)) {
-        console.log(`Число ${a} больше числа ${b}`);
-    } else if (Number(a) === Number(b)) {
-        console.log(`Число ${a} равно числу ${b}`);
-    } else {
-        console.log(`Число ${a} меньше числа ${b}`);
-    }
+let a = prompt('Введите число a');
+let b = prompt('Введите число b');
+if (Number(a) > Number(b)) {
+    console.log(b);
+} else if (Number(a) === Number(b)) {
+    console.log(`Числа ${a} и ${b} равны`);
+} else {
+    console.log(a);
 }
-
-task1();
 
 // ЗАДАНИЕ 2
 
-function task2() {
-    console.log('ЗАДАНИЕ 2');
+console.log('ЗАДАНИЕ 2');
 
-    let oddNumber = prompt('Введите число');
+let oddNumber = prompt('Введите число');
 
-    if (Number(oddNumber) % 2 === 0) {
-        console.log(`Число ${oddNumber} четное`);
-    } else if (Number(oddNumber) % 2 !== 0) {
-        console.log(`Число ${oddNumber} нечетное`);
-    }
+if (Number(oddNumber) % 2 === 0) {
+    console.log(`Число ${oddNumber} четное`);
+} else if (Number(oddNumber) % 2 !== 0) {
+    console.log(`Число ${oddNumber} нечетное`);
 }
-
-task2();
 
 // ЗАДАНИЕ 3
 
-function task3() {
-    console.log('ЗАДАНИЕ 3');
+console.log('ЗАДАНИЕ 3');
 
-    let number = prompt('Введите число которое нужно заквадратить');
+let number = prompt('Введите число которое нужно заквадратить');
 
-    squareNumber = number ** 2;
+let squareNumber = number ** 2;
 
-    console.log(`Квадрат числа ${number} равен ${squareNumber}`);
-    console.log(`${squareNumber}`);
-}
-
-task3();
+console.log(`Квадрат числа ${number} равен ${squareNumber}`);
+console.log(`${squareNumber}`);
 
 // ЗАДАНИЕ 4
 
-function task4() {
-    console.log('ЗАДАНИЕ 4');
+console.log('ЗАДАНИЕ 4');
 
-    let age = prompt('Введите ваш возраст');
+let age = prompt('Введите ваш возраст');
 
-    if (Number(age) < 0) {
-        console.log('Вы ввели неправильное значение');
-    } else if (Number(age) <= 12) {
-        console.log('Привет, друг!');
-    } else if (Number(age) === 67) {
-        console.log('Доступ закрыт');
-    } else {
-        console.log('Добро пожаловать!');
-    }
+if (Number(age) < 0) {
+    console.log('Вы ввели неправильное значение');
+} else if (Number(age) <= 12) {
+    console.log('Привет, друг!');
+} else {
+    console.log('Добро пожаловать!');
 }
-
-task4();
 
 // ЗАДАНИЕ 5
 
-function task5() {
-    console.log('ЗАДАНИЕ 5');
+console.log('ЗАДАНИЕ 5');
 
-    let firstNumber = prompt('Введите первое число');
-    let secondNumber = prompt('Введите второе число');
+let firstNumber = prompt('Введите первое число');
+let secondNumber = prompt('Введите второе число');
 
-    if (isNaN(Number(firstNumber)) && isNaN(Number(secondNumber))) {
-        console.log('Одно или оба значения не являются числом');
-    } else {
-        console.log(`Произведение чисел ${firstNumber} и ${secondNumber} равно ${Number(firstNumber) * Number(secondNumber)}`);
-    }
+if (isNaN(Number(firstNumber)) || isNaN(Number(secondNumber))) {
+    console.log('Одно или оба значения не являются числом');
+} else {
+    console.log(`Произведение чисел ${firstNumber} и ${secondNumber} равно ${Number(firstNumber) * Number(secondNumber)}`);
 }
-
-task5();
 
 // ЗАДАНИЕ 6
 
-function task6() {
-    console.log('ЗАДАНИЕ 6');
+console.log('ЗАДАНИЕ 6');
 
-    let cubeNumber = prompt('Введите число которое нужно закубить');
+let cubeNumber = prompt('Введите число которое нужно закубить');
 
-    if (isNaN(Number(cubeNumber))) {
-        console.log('Переданный параметр не является числом');
-    } else {
-        console.log(`${cubeNumber} в кубе равняется ${cubeNumber ** 3}`);
-    }
+if (isNaN(Number(cubeNumber))) {
+    console.log('Переданный параметр не является числом');
+} else {
+    console.log(`${cubeNumber} в кубе равняется ${cubeNumber ** 3}`);
 }
-
-task6();
 
 // ЗАДАНИЕ 7
 
