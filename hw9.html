@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw-9</title>
+</head>
+<body>
+
+    <!-- ЗАДАНИЕ 1 -->
+
+    <section id="task-1">
+        <h2>ЗАДАНИЕ 1</h2>
+
+        <h1>Этот заголовок можно скрыть и показать</h1>
+        <button>Скрыть</button>
+    </section>
+
+    <script>
+        const title = document.querySelector('#task-1 h1');
+        const button = document.querySelector('#task-1 button');
+
+        button.addEventListener('click', function () {
+            if (title.style.display === 'none') {
+                title.style.display = '';
+                button.textContent = 'Скрыть';
+            } else {
+                title.style.display = 'none';
+                button.textContent = 'Показать';
+            }
+        });
+    </script>
+
+    <!-- ЗАДАНИЕ 2 -->
+
+    <section id="task-2">
+        <h2>ЗАДАНИЕ 2</h2>
+
+        <p>Этот текст можно сделать синим</p>
+        <button>Изменить цвет</button>
+    </section>
+
+    <script>
+        const paragraph = document.querySelector('#task-2 p');
+        const colorButton = document.querySelector('#task-2 button');
+
+        colorButton.addEventListener('click', function () {
+            if (paragraph.style.color === 'blue') {
+                paragraph.style.color = 'black';
+            } else {
+                paragraph.style.color = 'blue';
+            }
+        });
+    </script>
+
+    <!-- ЗАДАНИЕ 3 -->
+
+    <section id="task-3">
+        <h2>ЗАДАНИЕ 3</h2>
+
+        <h1>Заголовок</h1>
+        <button>Изменить текст</button>
+    </section>
+
+    <script>
+        const heading = document.querySelector('#task-3 h1');
+        const textButton = document.querySelector('#task-3 button');
+
+        textButton.addEventListener('click', function () {
+            if (heading.textContent === 'Привет, мир!') {
+                heading.textContent = 'Заголовок';
+            } else {
+                heading.textContent = 'Привет, мир!';
+            }
+        });
+    </script>
+
+    <!-- ЗАДАНИЕ 4 -->
+
+    <section id="task-4">
+        <h2>ЗАДАНИЕ 4</h2>
+
+        <p class="description">Первый элемент с классом description</p>
+        <p class="description">Второй элемент с классом description</p>
+        <span class="description">Третий элемент с классом description</span>
+        <br>
+        <button>Изменить текст</button>
+    </section>
+
+    <script>
+        const descriptions = document.querySelectorAll('#task-4 .description');
+        const changeTextButton = document.querySelector('#task-4 button');
+
+        changeTextButton.addEventListener('click', function () {
+            for (let i = 0; i < descriptions.length; i++) {
+                descriptions[i].textContent = 'Измененный текст';
+            }
+        });
+    </script>
+
+    <!-- ЗАДАНИЕ 5 -->
+
+    <section id="task-5">
+        <h2>ЗАДАНИЕ 5</h2>
+
+        <p class="description">description</p>
+        <p class="decription">decription</p>
+        <p class="description">description</p>
+        <p>Без класса</p>
+        <p class="description">description</p>
+        <button>Изменить текст</button>
+    </section>
+
+    <script>
+        const descriptionParagraphs = document.querySelectorAll('#task-5 .description');
+        const textChangeButton = document.querySelector('#task-5 button');
+
+        textChangeButton.addEventListener('click', function () {
+            for (let i = 0; i < descriptionParagraphs.length; i++) {
+                descriptionParagraphs[i].textContent = 'Новый текст';
+            }
+        });
+    </script>
+
+    <!-- ЗАДАНИЕ 6 -->
+
+    <section id="task-6">
+        <h2>ЗАДАНИЕ 6</h2>
+
+        <button>Добавить элемент</button>
+    </section>
+
+    <script>
+        const task6Section = document.querySelector('#task-6');
+        const addButton = document.querySelector('#task-6 button');
+
+        addButton.addEventListener('click', function () {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            task6Section.appendChild(newParagraph);
+        });
+    </script>
+
+    <!-- ЗАДАНИЕ 7 -->
+
+    <section id="task-7">
+        <h2>ЗАДАНИЕ 7</h2>
+
+        <p class="description">description</p>
+        <p class="decription">decription</p>
+        <p class="description">description</p>
+        <p>Без класса</p>
+        <p class="description">description</p>
+        <button>Удалить элемент</button>
+    </section>
+
+    <script>
+        const deleteButton = document.querySelector('#task-7 button');
+
+        deleteButton.addEventListener('click', function () {
+            const firstDescription = document.querySelector('#task-7 .description');
+
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        });
+    </script>
+
+</body>
+</html>
