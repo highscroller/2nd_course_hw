@@ -1,10 +1,11 @@
 // ЗАДАНИЕ 1
 
+let a = 2;
+let b = 3;
+
 function task1() {
     console.log('ЗАДАНИЕ 1');
 
-    let a = prompt('Введите число a');
-    let b = prompt('Введите число b');
     if (Number(a) > Number(b)) {
         console.log(b);
     } else if (Number(a) === Number(b)) {
@@ -24,9 +25,9 @@ function task2() {
     let oddNumber = prompt('Введите число');
 
     if (Number(oddNumber) % 2 === 0) {
-        console.log(`Число ${oddNumber} четное`);
+        console.log(`Число четное`);
     } else if (Number(oddNumber) % 2 !== 0) {
-        console.log(`Число ${oddNumber} нечетное`);
+        console.log(`Число нечетное`);
     }
 }
 
@@ -40,9 +41,9 @@ function task3() {
     let number = prompt('Введите число которое нужно заквадратить');
 
     squareNumber = number ** 2;
-
+    
     console.log(`Квадрат числа ${number} равен ${squareNumber}`);
-    console.log(`${squareNumber}`);
+    return squareNumber;
 }
 
 task3();
@@ -75,7 +76,7 @@ function task5() {
     let firstNumber = prompt('Введите первое число');
     let secondNumber = prompt('Введите второе число');
 
-    if (isNaN(Number(firstNumber)) && isNaN(Number(secondNumber))) {
+    if (isNaN(Number(firstNumber)) || isNaN(Number(secondNumber))) {
         console.log('Одно или оба значения не являются числом');
     } else {
         console.log(`Произведение чисел ${firstNumber} и ${secondNumber} равно ${Number(firstNumber) * Number(secondNumber)}`);
