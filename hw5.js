@@ -5,11 +5,11 @@ console.log('ЗАДАНИЕ 1');
 let a = prompt('Введите число a');
 let b = prompt('Введите число b');
 if (Number(a) > Number(b)) {
-    console.log(`Число ${a} больше числа ${b}`);
+    console.log(b);
 } else if (Number(a) === Number(b)) {
-    console.log(`Число ${a} равно числу ${b}`);
+    console.log(`Числа ${a} и ${b} равны`);
 } else {
-    console.log(`Число ${a} меньше числа ${b}`);
+    console.log(a);
 }
 
 // ЗАДАНИЕ 2
@@ -30,7 +30,7 @@ console.log('ЗАДАНИЕ 3');
 
 let number = prompt('Введите число которое нужно заквадратить');
 
-squareNumber = number ** 2;
+let squareNumber = number ** 2;
 
 console.log(`Квадрат числа ${number} равен ${squareNumber}`);
 console.log(`${squareNumber}`);
@@ -45,8 +45,6 @@ if (Number(age) < 0) {
     console.log('Вы ввели неправильное значение');
 } else if (Number(age) <= 12) {
     console.log('Привет, друг!');
-} else if (Number(age) === 67) {
-    console.log('Доступ закрыт');
 } else {
     console.log('Добро пожаловать!');
 }
@@ -58,7 +56,7 @@ console.log('ЗАДАНИЕ 5');
 let firstNumber = prompt('Введите первое число');
 let secondNumber = prompt('Введите второе число');
 
-if (isNaN(Number(firstNumber)) && isNaN(Number(secondNumber))) {
+if (isNaN(Number(firstNumber)) || isNaN(Number(secondNumber))) {
     console.log('Одно или оба значения не являются числом');
 } else {
     console.log(`Произведение чисел ${firstNumber} и ${secondNumber} равно ${Number(firstNumber) * Number(secondNumber)}`);
