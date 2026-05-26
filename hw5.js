@@ -55,15 +55,12 @@ function task4() {
 
     let age = prompt('Введите ваш возраст');
 
-    if (Number(age) < 0) {
-        console.log('Вы ввели неправильное значение');
-    } else if (Number(age) <= 12) {
-        console.log('Привет, друг!');
-    } else if (Number(age) === 67) {
-        console.log('Доступ закрыт');
-    } else {
-        console.log('Добро пожаловать!');
-    }
+if (Number(age) < 0) {
+    console.log('Вы ввели неправильное значение');
+} else if (Number(age) <= 12) {
+    console.log('Привет, друг!');
+} else {
+    console.log('Добро пожаловать!');
 }
 
 task4();
