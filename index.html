@@ -33,17 +33,36 @@
 
     <main class="main">
         <div class="ticker">
-            <p class="ticker__text">Викторина</p>
-            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
-            <p class="ticker__text">Угадай число</p>
-            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
-            <p class="ticker__text">Переверни текст</p>
-            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
-            <p class="ticker__text">Простая арифметика</p>
-            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
-            <p class="ticker__text">Камень, ножницы, бумага</p>
-            <img src="img/ticker_star.png" alt="ticker_star" class="ticker__star">
-            <p class="ticker__text">Генератор сулчайных цветов</p>
+            <div class="ticker__track">
+                <div class="ticker__content">
+                    <p class="ticker__text">Викторина</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Угадай число</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Переверни текст</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Простая арифметика</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Камень, ножницы, бумага</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Генератор случайных цветов</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                </div>
+                <div class="ticker__content" aria-hidden="true">
+                    <p class="ticker__text">Викторина</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Угадай число</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Переверни текст</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Простая арифметика</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Камень, ножницы, бумага</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                    <p class="ticker__text">Генератор случайных цветов</p>
+                    <img src="img/ticker_star.png" alt="" class="ticker__star">
+                </div>
+            </div>
         </div>
 
         <div class="info l-center" id="about-games">
@@ -132,7 +151,7 @@
                             <span class="info__game-card-tag">Игра № 6</span>
                             <h2 class="info__game-card-title">Генератор случайных цветов</h2>
                             <p class="info__game-card-description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                            <button class="info__game-card-button">Играть!</button>
+                            <button class="info__game-card-button" onclick="randomColorGame(event)">Играть!</button>
                         </div>
                     </article>
                 </a>
@@ -209,7 +228,7 @@
                         <span class="mini-games__game-card-tag">Игра № 6</span>
                         <h2 class="mini-games__game-card-title">Генератор случайных цветов</h2>
                         <p class="mini-games__game-card-description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                        <button class="mini-games__game-card-button">Играть!</button>
+                        <button class="mini-games__game-card-button" onclick="randomColorGame(event)">Играть!</button>
                     </div>
                 </article>
             </div>
@@ -224,7 +243,7 @@
     <!-- <script src="hw2.js"></script> -->
     <!-- <script src="hw3.js"></script> -->
     <!-- <script src="hw4.js"></script> -->
-    <script src="hw5.js"></script>
+    <!-- <script src="hw5.js"></script> -->
     <!-- <script src="hw6.js"></script> -->
     <!-- <script src="hw7.js"></script> -->
     <!-- <script src="hw8.js"></script> -->
@@ -233,5 +252,6 @@
     <script src="reverseTextGame.js"></script>
     <script src="rockPaperScissorsGame.js"></script>
     <script src="simpleQuizGame.js"></script>
+    <script src="randomColorGame.js"></script>
 </body>
 </html>

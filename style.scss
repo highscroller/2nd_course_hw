@@ -3,15 +3,24 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 .l-center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    width: 100%;
+    max-width: 100%;
+    padding-left: max(16px, calc(50% - 600px));
+    padding-right: max(16px, calc(50% - 600px));
 }
 
 h1 {
@@ -75,12 +84,15 @@ h3 {
 
 .header {
     background-color: $color-light-green;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .heading {
     position: relative;
-    width: 769px;
-    padding: 196px 551px 156px 0;
+    max-width: 769px;
+    width: 100%;
+    padding: 196px 0 156px;
     display: flex;
     gap: 24px;
     flex-direction: column;
@@ -107,7 +119,7 @@ h3 {
         width: 37px;
         height: 37px;
         top: 499px;
-        left: 828px;
+        left: clamp(480px, 57.5vw, 828px);
     }
 
     &__bottom-empty-star {
@@ -115,13 +127,15 @@ h3 {
         width: 83px;
         height: 83px;
         top: 520px;
-        left: 893px;
+        left: clamp(520px, 62vw, 893px);
     }
 
     &__big-star-desktop {
         position: absolute;
         top: -400px;
-        left: 720px;
+        left: clamp(420px, 50vw, 720px);
+        max-width: none;
+        pointer-events: none;
     }
 
     &__big-star-mobile {
@@ -160,12 +174,15 @@ h3 {
 
 .main {
     position: relative;
+    overflow: hidden;
+    max-width: 100%;
 
     &__big-star {
         position: absolute;
         top: 120px;
-        left: 933px;
+        left: clamp(560px, 65vw, 933px);
         z-index: -1;
+        pointer-events: none;
     }
 }
 
@@ -174,12 +191,23 @@ h3 {
     z-index: 1;
     padding-top: 27px;
     padding-bottom: 27px;
-    display: flex;
-    align-items: center;
-    gap: 51px;
     background-color: $color-green;
     width: 100%;
     overflow: hidden;
+
+    &__track {
+        display: flex;
+        width: max-content;
+        animation: ticker-scroll 25s linear infinite;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 51px;
+        padding-right: 51px;
+        flex-shrink: 0;
+    }
 
     &__text {
         font-family: Montserrat;
@@ -191,6 +219,24 @@ h3 {
         vertical-align: middle;
         text-transform: uppercase;
         white-space: nowrap;
+        margin: 0;
+    }
+
+    &__star {
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+    }
+}
+
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
     }
 }
 
@@ -203,6 +249,8 @@ h3 {
     gap: 24px;
     flex-direction: column;
     z-index: 1;
+    overflow: hidden;
+    max-width: 100%;
 
     &__title-desktop {
         color: $color-white;
@@ -221,10 +269,13 @@ h3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         margin-top: 48px;
         gap: 32px;
+        width: 100%;
 
         a {
             text-decoration: none;
             color: inherit;
+            min-width: 0;
+            max-width: 100%;
         }
     }
 
@@ -235,6 +286,7 @@ h3 {
         top: 770px;
         left: 25px;
         transform: rotate(5.45deg);
+        pointer-events: none;
     }
 
     &__small-star {
@@ -244,6 +296,7 @@ h3 {
         top: 822px;
         left: 40px;
         transform: rotate(5.45deg);
+        pointer-events: none;
     }
 }
 
@@ -349,6 +402,8 @@ h3 {
     padding-bottom: 144px;
     background-color: $color-black;
     z-index: 1;
+    overflow: hidden;
+    max-width: 100%;
 
     &__title-desktop {
         margin: 0;
@@ -365,9 +420,11 @@ h3 {
         width: 35px;
         height: 35px;
         top: 47px;
-        left: 1268px;
+        right: max(-20px, calc(50% - 700px));
+        left: auto;
         transform: rotate(5.45deg);
         z-index: 1;
+        pointer-events: none;
     }
 
     &__small-star {
@@ -375,9 +432,11 @@ h3 {
         width: 70px;
         height: 70px;
         top: 60px;
-        left: 1330px;
+        right: max(-60px, calc(50% - 770px));
+        left: auto;
         transform: rotate(5.45deg);
         z-index: 1;
+        pointer-events: none;
     }
 
     &__games {
@@ -491,6 +550,8 @@ h3 {
 
 .footer {
     background-color: $color-green;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .footer-text {
